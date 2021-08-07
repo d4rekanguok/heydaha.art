@@ -9,3 +9,5 @@ node_modules
 /static/media/*
 !/static/media/.gitkeep
 /data/media.json
+# Local Netlify folder
+.netlify
