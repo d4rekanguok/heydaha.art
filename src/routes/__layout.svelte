@@ -11,7 +11,7 @@
 	<slot />
 </main>
 <footer>
-	Copyright {year}. All artworks are properties. Built by
+	Copyright {year}. All artworks are properties. Built with ❤️ by
 	<a href="https://twitter.com/DerekNguyen10">@dereknguyen10</a>
 </footer>
 
@@ -19,13 +19,14 @@
 	:global(html) {
 		font-family: 'Work Sans', sans-serif;
 		background-color: snow;
+		--nav-width: 3rem;
 	}
 
 	.nav {
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 4rem;
+		width: var(--nav-width, 3rem);
 		border-right: 1px solid pink;
 		height: 100%;
 		display: flex;
@@ -52,8 +53,14 @@
 	footer {
 		box-sizing: border-box;
 		position: relative;
-		width: calc(100vw - 4rem);
-		left: 4rem;
+		width: calc(100vw - var(--nav-width, 3rem));
+		left: var(--nav-width, 3rem);
 		padding: 2rem;
+	}
+
+	@media (min-width: 60rem) {
+		:global(html) {
+			--nav-width: 4rem;
+		}
 	}
 </style>
