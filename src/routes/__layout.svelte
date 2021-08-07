@@ -91,6 +91,7 @@
 		footer {
 			box-sizing: border-box;
 			position: relative;
+			font-size: 0.8rem;
 			width: calc(100vw - var(--nav-width, 3rem));
 			left: var(--nav-width, 3rem);
 			padding: 2rem;
