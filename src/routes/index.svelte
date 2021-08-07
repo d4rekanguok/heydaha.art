@@ -1,6 +1,6 @@
 <script>
 	import Card from '$lib/Card.svelte';
-	import data from '$data/list.json';
+	import data from '$data/media.json';
 </script>
 
 <header>
@@ -26,8 +26,9 @@
 
 	.grid {
 		display: grid;
+		gap: 5rem;
 		grid-template-columns: repeat(3, 1fr);
-		grid-auto-rows: minmax(100px, auto);
+		grid-auto-rows: minmax(200px, auto);
 		list-style-type: none;
 		margin: 0;
 		padding: 0;

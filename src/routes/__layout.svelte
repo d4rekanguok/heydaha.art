@@ -1,9 +1,17 @@
+<script>
+	let year = new Date().getFullYear();
+</script>
+
 <nav class="nav">
 	<h1 class="logo">Daha Art</h1>
 </nav>
 <main>
 	<slot />
 </main>
+<footer>
+	Copyright {year}. All artworks are properties. Built by
+	<a href="https://twitter.com/DerekNguyen10">@dereknguyen10</a>
+</footer>
 
 <style>
 	:global(html) {
@@ -12,7 +20,7 @@
 	}
 
 	.nav {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 4rem;
@@ -35,6 +43,7 @@
 
 	main {
 		position: relative;
+		width: calc(100vw - 4rem);
 		left: 4rem;
 		padding: 2rem;
 	}

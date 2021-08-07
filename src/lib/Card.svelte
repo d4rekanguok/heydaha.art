@@ -6,14 +6,20 @@
 </script>
 
 <article class="card" style="--alignment: {alignment}">
-	<a href="/art/{data.id}">
-		<h1>{data.id}</h1>
-		<img src={data.src} alt="" />
+	<h1>{data.path}</h1>
+	<div>{data.date}</div>
+	<a class="link" href="/art/{data.id}">
+		<img src={`/media/${data.id}/640.webp`} alt="" />
 	</a>
 </article>
 
 <style>
 	.card {
 		align-self: var(--alignment, 'start');
+	}
+
+	.link {
+		text-decoration: none;
+		color: inherit;
 	}
 </style>

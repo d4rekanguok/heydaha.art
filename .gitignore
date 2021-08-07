@@ -3,3 +3,10 @@ node_modules
 /build
 /.svelte-kit
 /package
+.env
+
+# generated
+/static/media/*
+!/static/media/.gitkeep
+/data/*
+!/data/.gitkeep
