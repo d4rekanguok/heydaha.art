@@ -16,10 +16,23 @@
 </footer>
 
 <style>
+	:root {
+		--bg-color: snow;
+		--fg-color: midnightblue;
+	}
+
 	:global(html) {
 		font-family: 'Work Sans', sans-serif;
-		background-color: snow;
+		background-color: var(--bg-color, snow);
+		color: var(--fg-color);
 		--nav-width: 3rem;
+	}
+
+	@media (prefers-color-scheme) {
+		:root {
+			--bg-color: darkslateblue;
+			--fg-color: aliceblue;
+		}
 	}
 
 	.nav {
