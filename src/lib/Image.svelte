@@ -5,10 +5,8 @@
 	let alt;
 	export { className as class };
 
-	const getSrcset = (
-		extension
-	) => `/media/${id}/640.${extension} 640w, /media/${id}/960.${extension} 960w, /media/${id}/1280.${extension} 1280w
-  `;
+	const getSrcset = (extension) =>
+		`/media/${id}/640.${extension} 640w, /media/${id}/960.${extension} 960w, /media/${id}/1280.${extension} 1280w`;
 </script>
 
 <picture class={className}>

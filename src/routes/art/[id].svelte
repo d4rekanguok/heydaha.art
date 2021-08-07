@@ -1,4 +1,5 @@
 <script context="module">
+	export const hydrate = false;
 	import data from '$data/media.json';
 
 	export const load = async ({ page, fetch }) => {
@@ -46,16 +47,10 @@
 <style>
 	.container {
 		position: relative;
-		display: flex;
-		gap: 2rem;
 	}
 
 	.image {
-		width: 75%;
-	}
-
-	.info {
-		width: 25%;
+		margin-bottom: 2rem;
 	}
 
 	h1 {
@@ -66,5 +61,20 @@
 
 	.desc {
 		font-size: 1.5rem;
+	}
+
+	@media (min-width: 60rem) {
+		.container {
+			display: flex;
+			gap: 2rem;
+		}
+
+		.image {
+			width: 75%;
+		}
+
+		.info {
+			width: 25%;
+		}
 	}
 </style>
