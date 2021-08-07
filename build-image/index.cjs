@@ -81,6 +81,8 @@ const getMediaMetadata = async () => {
 		const batched = batch(entriesP);
 		const entries = await runBatch(batched);
 
+    entries.sort((a, b) => b.sortableDate - a.sortableDate)
+
 		console.log(`Found ${entries.length} files. Writing data to json...`);
 		await fs.writeFile(path.join(process.cwd(), 'data/media.json'), JSON.stringify(entries));
 		console.log(`Write complete.`);

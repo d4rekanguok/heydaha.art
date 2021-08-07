@@ -3,7 +3,9 @@
 </script>
 
 <nav class="nav">
-	<h1 class="logo">Daha Art</h1>
+	<a href="/">
+		<h1 class="logo">Hey Daha</h1>
+	</a>
 </nav>
 <main>
 	<slot />
@@ -32,6 +34,11 @@
 		padding: 3rem 0;
 	}
 
+	nav a {
+		text-decoration: none;
+		color: inherit;
+	}
+
 	.logo {
 		text-transform: uppercase;
 		writing-mode: vertical-lr;
@@ -41,7 +48,9 @@
 		letter-spacing: 0.05em;
 	}
 
-	main {
+	main,
+	footer {
+		box-sizing: border-box;
 		position: relative;
 		width: calc(100vw - 4rem);
 		left: 4rem;

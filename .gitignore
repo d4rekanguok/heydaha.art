@@ -8,5 +8,4 @@ node_modules
 # generated
 /static/media/*
 !/static/media/.gitkeep
-/data/*
-!/data/.gitkeep
+/data/media.json

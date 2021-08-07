@@ -3,6 +3,10 @@
 	import data from '$data/media.json';
 </script>
 
+<svelte:head>
+	<title>Hey Daha!</title>
+</svelte:head>
+
 <header>
 	<p class="intro">
 		Hi there! The artworks below are created by a little girl from South Korea. Enjoy!

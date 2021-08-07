@@ -1,4 +1,6 @@
 <script>
+	import Image from '$lib/Image.svelte';
+
 	export let data;
 	const alignOptions = ['start', 'end', 'center'];
 
@@ -6,16 +8,18 @@
 </script>
 
 <article class="card" style="--alignment: {alignment}">
-	<h1>{data.path}</h1>
-	<div>{data.date}</div>
 	<a class="link" href="/art/{data.id}">
-		<img src={`/media/${data.id}/640.webp`} alt="" />
+		<Image id={data.id} />
 	</a>
 </article>
 
 <style>
 	.card {
 		align-self: var(--alignment, 'start');
+	}
+
+	header {
+		margin-bottom: 1rem;
 	}
 
 	.link {
