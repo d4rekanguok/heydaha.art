@@ -28,7 +28,7 @@
 		--nav-width: 3rem;
 	}
 
-	@media (prefers-color-scheme) {
+	@media (prefers-color-scheme: dark) {
 		:root {
 			--bg-color: darkslateblue;
 			--fg-color: aliceblue;

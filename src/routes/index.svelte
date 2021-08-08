@@ -37,6 +37,7 @@
 	.cursive {
 		font-family: 'Reenie Beanie', cursive;
 		font-size: 1.5em;
+		color: pink;
 	}
 
 	.grid {
